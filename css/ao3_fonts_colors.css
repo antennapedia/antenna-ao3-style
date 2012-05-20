@@ -132,19 +132,16 @@ td {
 }
 a,
 a:link,
-a:visited:hover {
-  color: #111;
+a:visited {
+  color: #000000;
   text-decoration: none;
-  border-bottom: 1px solid;
   cursor: pointer;
 }
-a:visited {
-  color: #666;
-  text-decoration: none;
-  border-bottom: 1px dashed;
-}
-a:hover {
-  color: #999;
+a:hover,
+a:active,
+a:focus {
+  color: #ffffff;
+  background-color: #506652;
 }
 a img {
   border: 0;
@@ -204,10 +201,6 @@ a.question {
   border: 0;
   font-weight: bold;
 }
-a:active,
-a:focus {
-  outline: 1px dotted;
-}
 h1 {
   font-size: 2.5em;
   line-height: 1;
@@ -218,7 +211,7 @@ h2 {
   line-height: 1;
   margin: 0.429em 0;
   display: inline;
-  text-shadow: -1px -1px 2px #ffffff;
+  text-shadow: -1px -1px 2px #bfbf9b;
 }
 h3 {
   font-size: 1.286em;
@@ -249,7 +242,7 @@ hr {
 }
 hr {
   border: 0;
-  border-bottom: 3px double;
+  border-bottom: 3px double #000000;
 }
 .clear {
   clear: both;
@@ -427,7 +420,7 @@ th a:link {
   box-shadow: inset 0 -5px 10px rgba(0, 0, 0, 0.5);
 }
 #header .search input[type="text"] {
-  border-color: #300;
+  border-color: #506652;
 }
 #header h2 {
   line-height: 1.5;
@@ -449,8 +442,7 @@ th a:link {
 #header .primary .current,
 #header .primary input,
 #header .search input {
-  border-color: #a00;
-  border-bottom-color: #400;
+  border-color: #506652;
 }
 #header .primary a:focus,
 #header .primary input:focus {
@@ -523,7 +515,7 @@ th a:link {
 }
 #dashboard a,
 #dashboard span {
-  color: #111;
+  color: #222222;
   display: block;
   white-space: normal;
   height: auto;
@@ -570,7 +562,7 @@ th a:link {
 #main.maintenance {
   background: url("/images/ao3_logos/sadface.png") top right no-repeat;
   border: 0;
-  color: #222;
+  color: #222222;
 }
 #footer {
   background: #506652 url("/images/skins/textures/tiles/red-ao3.png");
@@ -818,11 +810,9 @@ textarea.LV_invalid_field:active {
   border: 1px solid #c00;
 }
 .autocomplete div.dropdown ul {
-  background: #ffffff;
   border: 1px solid #eee;
   padding: 0.125em;
   line-height: 1.286;
-  color: #000;
   display: block;
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
@@ -847,7 +837,7 @@ li.selected {
 }
 .required .autocomplete,
 .autocomplete .notice {
-  color: #222;
+  color: #222222;
 }
 .autocomplete li.added,
 .post .meta dd ul li.added {
@@ -1056,7 +1046,7 @@ div.afterword {
   display: inline;
 }
 .actions a:visited {
-  color: #111;
+  color: #222222;
 }
 .actions .landmark {
   clear: none;
@@ -1136,7 +1126,7 @@ a.current,
   color: #111;
   background: #ccc;
   border-color: #ffffff;
-  box-shadow: inset 1px 1px 3px #333;
+  box-shadow: inset 1px 1px 3px #222222;
 }
 .delete a,
 span.delete {
@@ -1335,11 +1325,8 @@ span.question {
 }
 a.tag,
 .tags a {
-  color: #111;
-  line-height: 1.5;
+  color: #222222;
   text-decoration: none;
-  padding: 0 0.125em;
-  border-bottom: 1px dotted;
 }
 a.tag:hover,
 .listbox .heading a.tag:visited:hover {
@@ -1480,7 +1467,7 @@ fieldset fieldset.listbox {
 .listbox .heading,
 .listbox .heading a:visited {
   margin: 0;
-  color: #222;
+  color: #222222;
   margin-top: 0;
   padding: 0.25em;
 }
@@ -2066,7 +2053,7 @@ dd.autocomplete li.input {
   text-align: center;
 }
 .userstuff h2 {
-  color: #333;
+  color: #222222;
   text-align: left;
   margin: 1.5em 0;
   display: block;
@@ -2074,25 +2061,29 @@ dd.autocomplete li.input {
 .userstuff h3 {
   font-weight: 900;
   padding: 0.125em;
-  border-bottom: 0.25em double #333;
+  border-bottom: 0.25em double #222222;
 }
-.userstuff h5 {
+.userstuff h3 a,
+.userstuff h3 a:link,
+.userstuff h3 a:visited {
   font-weight: 900;
-  font-size: 1em;
+  border-bottom: 0;
+  text-decoration: none;
 }
 .userstuff h6 {
-  font-size: 0.975em;
   border-bottom: 1px solid;
 }
 .userstuff caption {
   height: auto;
   font-size: 1em;
-  color: #222;
+  color: #222222;
 }
 .userstuff blockquote {
+  font-weight: 400;
+  font-style: italic;
   margin: auto auto auto 1.5em;
   padding: 0.75em;
-  border-left: 2px solid #999;
+  border-left: 2px solid #fff5db;
 }
 .userstuff blockquote blockquote {
   padding: 0.25em;
@@ -2110,13 +2101,6 @@ dd.autocomplete li.input {
   list-style-type: disc;
   margin: 0.75em 0 0.75em 1.75em;
 }
-.userstuff h3 a,
-.userstuff h3 a:link,
-.userstuff h3 a:visited {
-  font-weight: 900;
-  border-bottom: 0;
-  text-decoration: none;
-}
 .userstuff table,
 .userstuff td,
 .userstuff col,
@@ -2129,7 +2113,7 @@ dd.autocomplete li.input {
 .userstuff th a,
 .userstuff th a:link {
   background: transparent;
-  color: #222;
+  color: #222222;
   border: none;
 }
 #workskin {
@@ -2163,24 +2147,24 @@ ul.notes,
 .caution,
 .error,
 .comment_error {
-  background: #d1e1ef;
-  border: 1px solid #c2d2df;
+  background-color: #bfbf9b;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border: none;
   margin: 0.643em auto;
   padding: 0.25em 0.375em;
   clear: right;
-  box-shadow: inset 1px 1px 2px;
-  border-radius: 0.25em;
 }
-.caution {
-  background: #ffe34e;
-  color: #000;
-  border-color: #d89e36;
-}
+.caution,
 .error,
 .comment_error {
-  background: #efd1d1;
+  background-color: #757575;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border: none;
   border-color: #506652;
-  box-shadow: 1px 1px 2px;
 }
 .notes {
   clear: right;
