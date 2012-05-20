@@ -1,0 +1,312 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:400,900,400italic&.css");
+/* stylish mods I'm using on ao3 now */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading,
+#header {
+  font-family: Lato, Lucida Grande, Helvetica, sans-serif;
+  font-weight: 900;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  font-family: Lato, Lucida Grande, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 11pt;
+  line-height: 1.25em;
+}
+kbd,
+tt,
+code,
+var,
+pre {
+  font-family: 'Menlo', 'Monaco', 'Consolas', Courier, monospace;
+  font-size: 0.75em;
+}
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+a,
+a:link,
+a:visited {
+  color: #000000;
+  text-decoration: none;
+  border: none;
+}
+a:hover {
+  color: #ffffff;
+  background-color: #506652;
+}
+/* reused elements */
+.hidden {
+  display: none;
+}
+/* named divs */
+#main {
+  max-width: 60em;
+}
+/* page sections */
+.meta dl {
+  border: none;
+}
+.meta dt {
+  text-align: right;
+  font-weight: 900;
+  margin-right: 1em;
+}
+.wrapper {
+  box-shadow: none;
+}
+.title {
+  font-size: 20pt;
+  display: inline;
+}
+.byline {
+  display: inline;
+}
+.byline::before {
+  content: "by ";
+  display: inline;
+}
+.byline a {
+  font-size: 16pt;
+  font-weight: 900;
+}
+blockquote.userstuff {
+  font-weight: 400;
+  font-style: italic;
+}
+.preface {
+  background-color: #bfbf9b;
+  border-radius: 1em;
+  border: none;
+}
+.summary h3,
+.notes h3 {
+  display: none;
+}
+.notes,
+.summary {
+  min-height: 0px;
+}
+.preface {
+  margin: 0;
+}
+.userstuff p {
+  font-family: Lato, Lucida Grande, Helvetica, sans-serif;
+  font-size: 11pt;
+  font-weight: 400;
+  line-height: 1.25em;
+}
+input,
+textarea {
+  font-family: inherit;
+  border: 1px solid #BBBBBB;
+  box-shadow: 0 1px 2px #CCCCCC inset;
+  width: 100%;
+}
+blockquote,
+pre {
+  font-family: Lucida Grande, Helvetica, sans-serif;
+  margin: 0.643em;
+}
+.heading .actions,
+.heading .action,
+.heading span.actions {
+  font-family: Lucida Grande, Helvetica, sans-serif;
+  font-weight: 900;
+}
+span.unread,
+.replied,
+span.claimed {
+  font-family: inherit;
+}
+a.work {
+  color: #506652;
+  font: inherit;
+  margin: 0.5em 0;
+}
+a.work:hover {
+  color: white;
+  background-color: #506652;
+}
+.system {
+  font: inherit;
+}
+.navigation,
+.actions {
+  font-size: 12px;
+}
+li.blurb {
+  background-color: #bfbf9b;
+  box-shadow: none;
+  clear: left;
+  display: block;
+  overflow: visible;
+  padding: 0.429em 0.75em;
+  position: relative;
+}
+.actions {
+  font-family: Lato;
+  font-weight: 900;
+  font-size: 11pt;
+}
+/* hide the stupid slash/het/gen symbol block */
+ul.required-tags {
+  display: none;
+}
+.blurb li {
+  border: none;
+  box-shadow: none;
+}
+.blurb .header {
+  min-height: 0px;
+  margin-top: 1em;
+}
+.blurb .header .heading,
+.blurb .header ul,
+.blurb .header p.status {
+  display: block;
+  background: transparent;
+  margin: 0.375em 5.25em 0 0px;
+}
+.blurb h4 a {
+  font-size: 13pt;
+  font-weight: 900;
+  color: #506652;
+}
+.blurb h4 a:hover {
+  font-size: 13pt;
+  font-weight: 900;
+  color: white;
+  background-color: #506652;
+}
+.blurb h4 a.author {
+  font-size: 11pt;
+  text-decoration: none;
+}
+li.blurb,
+.blurb .blurb {
+  display: block;
+  position: relative;
+  clear: left;
+  margin: none;
+  padding: 0;
+  overflow: visible;
+  box-shadow: none;
+}
+fieldset {
+  background-color: #bfbf9b;
+  border-radius: 1em;
+  box-shadow: none;
+}
+form dt {
+  border: none;
+}
+a.tag,
+.tags a {
+  color: black;
+  background: transparent;
+  text-decoration: none;
+  padding: none;
+  border: none;
+}
+a.tag:hover {
+  background: #506652;
+  color: white;
+}
+.listbox {
+  border: none;
+  background-color: transparent;
+}
+.listbox .index,
+.listbox .dashboard .index {
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+.listbox .group ul {
+  padding: none;
+}
+.listbox .index li {
+  padding: 0;
+  margin: 0 1.25em 0 1.25em;
+}
+.listbox .tags li {
+  padding: 0;
+  margin: 0;
+}
+.listbox .heading {
+  padding: 0;
+}
+.listbox .heading a,
+.listbox .heading a:visited {
+  color: #506652;
+  background-color: transparent;
+}
+.listbox h3.heading {
+  background-color: #bfbf9b;
+  border-radius: 1em;
+  padding: 1em;
+  width: 95%;
+}
+.listbox h4.heading {
+  font-size: 11pt;
+}
+.listbox .heading h4 a {
+  color: #506652;
+  background-color: transparent;
+}

@@ -1,0 +1,39 @@
+#main.error {
+    p {
+        margin-right: 400px;
+    }
+}
+#main.error, #main.slow, #main.maintenance {
+    background: url("/images/ao3_logos/sadface.png") top right no-repeat;
+    border: 0;
+    color: #222;
+}
+#main:after {
+    content: " ";
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+}
+#main.maintenance {
+    background: url("/images/ao3_logos/logo-ruby.png") top right no-repeat;
+}
+#main.dashboard {
+    margin: 0.5em auto 1em 15em;
+}
+#main.home {
+    padding: 2em 7.5em 3.5em;
+}
+#main {
+    font-size: 0.875em;
+    line-height: 1.286;
+    margin: auto;
+    padding: 0.5em 2.5em 3.5em;
+    position: relative;
+    min-height: 450px;
+}
+#main.slow {
+    background: url("/images/ao3_logos/ao3-502.png") top right no-repeat;
+}
+

@@ -1,0 +1,94 @@
+.home p, .home .header {
+    clear: right;
+}
+.home {
+    .header {
+        h2 {
+            text-align: right;
+            border-bottom: 2px solid;
+            display: block;
+        }
+    }
+    .primary {
+        margin: 0 0 0.643em;
+        min-height: 100px;
+    }
+}
+.home .header .userstuff, .home .header dl.stats, .home .header .type {
+    margin-left: 120px;
+}
+.admin {
+    .header {
+        h3 {
+            font-size: 2.143em;
+            text-align: center;
+        }
+    }
+    .primary {
+        .icon {
+            background: url("/images/imageset.png") 100px -75px;
+        }
+    }
+}
+.primary {
+    .icon {
+        position: absolute;
+        top: 0;
+    }
+}
+.collection {
+    .primary {
+        .icon {
+            background: url("/images/imageset.png") 100px -175px;
+        }
+    }
+}
+.skins {
+    .primary {
+        .icon {
+            background: url("/images/imageset.png") 0px -175px;
+        }
+    }
+}
+.tag .primary .icon, .tagset .primary .icon {
+    background: url("/images/imageset.png") 0px -275px;
+}
+.profile {
+    .primary {
+        float: none;
+    }
+}
+.dashboard {
+    &.collections-index {
+        .index {
+            width: 100%;
+        }
+    }
+    form {
+        &.filters {
+            & + h4 {
+                &.landmark {
+                    clear: left;
+                }
+            }
+        }
+    }
+}
+#dynamic-bookmark {
+    & + h4 {
+        &.landmark {
+            clear: both;
+        }
+    }
+}
+#inbox-form {
+    float: left;
+    width: 75%;
+}
+.readings-index {
+    h3 {
+        background: #ddd;
+        margin: -0.5em 0 -0.25em 0;
+        padding: 0.25em;
+    }
+}

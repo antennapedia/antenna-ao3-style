@@ -1,0 +1,120 @@
+.userstuff {
+    p {
+        margin: 1.286em auto;
+        padding: 0;
+        line-height: 1.5;
+    }
+    dl {
+        margin: 1.5em 0;
+        border: 0;
+        dl {
+            width: 90%;
+            margin: auto;
+        }
+    }
+    dt {
+        display: block;
+        font-weight: bold;
+    }
+    dd {
+        display: block;
+        line-height: 1.5;
+        margin: 1.25em auto 1.25em 3em;
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    ul {
+        margin: 1.125em auto;
+        padding: 0 1em;
+    }
+    ol {
+        margin: 0.75em auto;
+        padding: 0 1.5em;
+        li {
+            list-style-type: decimal;
+            margin: 0.75em 0 0.75em 1.75em;
+            ol {
+                li {
+                    list-style-type: lower-alpha;
+                    ol {
+                        li {
+                            list-style-type: lower-roman;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        color: #333;
+        text-align: left;
+        margin: 1.5em 0;
+        display: block;
+    }
+    h3 {
+        font-weight: 500;
+        padding: 0.125em;
+        border-bottom: 0.25em double #333;
+    }
+    h5 {
+        font-weight: 600;
+        font-size: 1em;
+    }
+    h6 {
+        font-size: 0.975em;
+        border-bottom: 1px solid;
+    }
+    caption {
+        height: auto;
+        font-size: 1em;
+        color: #222;
+    }
+    blockquote {
+        margin: auto auto auto 1.5em;
+        padding: 0.75em;
+        border-left: 2px solid #999;
+        blockquote {
+            padding: 0.25em;
+            border: 0;
+        }
+    }
+    hr {
+        width: 33%;
+        margin: 0.875em auto 1.2525em auto;
+        border: 1px solid;
+    }
+}
+.userstuff li, .userstuff ol ul li {
+    font-weight: normal;
+    display: list-item;
+    list-style-type: disc;
+    margin: 0.75em 0 0.75em 1.75em;
+}
+.userstuff h3 a, .userstuff h3 a:link, .userstuff h3 a:visited {
+    font-weight: 500;
+    border-bottom: 0;
+    text-decoration: none;
+}
+.userstuff table, .userstuff td, .userstuff col, .userstuff tr, .userstuff thead, .userstuff tfoot, .userstuff tbody, .userstuff th, .userstuff thead td, .userstuff th a, .userstuff th a:link {
+    background: transparent;
+    color: #222;
+    border: none;
+}
+#workskin {
+    max-width: 72em;
+    margin: auto;
+    font-size: 1.08em;
+    .module {
+        float: none;
+    }
+}
+#ibox_content {
+    .userstuff {
+        margin: auto 3.5em;
+    }
+}

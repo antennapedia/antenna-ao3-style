@@ -1,0 +1,259 @@
+.blurb ul li, .blurb dd ul li, .blurb ul.type {
+    display: inline;
+}
+li.blurb, .blurb .blurb {
+    display: block;
+    position: relative;
+    clear: left;
+    padding: 0.429em 0.75em;
+    overflow: visible;
+    box-shadow: inset 1px 1px 3px #ccc;
+    border-radius: 0.15em;
+}
+li {
+    &.blurb {
+        &:after {
+            content: " ";
+            display: block;
+            height: 0;
+            font-size: 0;
+            clear: both;
+            visibility: hidden;
+        }
+    }
+}
+.blurb {
+    .module {
+        float: none;
+    }
+    .header {
+        min-height: 55px;
+        margin-bottom: 0.375em;
+        img {
+            position: relative;
+            margin: 0;
+        }
+    }
+    .heading {
+        display: block;
+    }
+    ul {
+        &.required-tags {
+            position: absolute;
+            top: 0;
+            width: 60px;
+            margin: 0;
+            li {
+                span {
+                    background-repeat: no-repeat;
+                    height: 25px;
+                    width: 25px;
+                    display: block;
+                }
+            }
+        }
+    }
+    span {
+        &.text {
+            height: 0;
+            width: 0;
+            font-size: 0.001em;
+            color: transparent;
+        }
+    }
+    .category {
+        top: 0;
+    }
+    .rating-general-audience {
+        background: url("/images/imageset.png") -50px -25px;
+    }
+    .rating-explicit {
+        background: url("/images/imageset.png") -25px -25px;
+    }
+    .rating-mature {
+        background: url("/images/imageset.png") -75px -25px;
+    }
+    .rating-teen {
+        background: url("/images/imageset.png") 0px -25px;
+    }
+    .category-femslash {
+        background: url("/images/imageset.png") -25px 0px;
+    }
+    .category-gen {
+        background: url("/images/imageset.png") -50px 0px;
+    }
+    .category-slash {
+        background: url("/images/imageset.png") 0px 0px;
+    }
+    .category-het {
+        background: url("/images/imageset.png") -75px 0px;
+    }
+    .category-multi {
+        background: url("/images/imageset.png") -100px -0px;
+    }
+    .category-other {
+        background: url("/images/imageset.png") -125px 0px;
+    }
+    .complete-no {
+        background: url("/images/imageset.png") -100px -25px;
+    }
+    .complete-yes {
+        background: url("/images/imageset.png") -175px -25px;
+    }
+    .warning-yes {
+        background: url("/images/imageset.png") -150px -25px;
+    }
+    .warning-choosenotto {
+        background: url("/images/imageset.png") -125px -25px;
+    }
+    .external-work {
+        background: url("/images/imageset.png") -75px -50px;
+    }
+    .private {
+        .text {
+            background: url("/images/imageset.png") -175px -50px;
+        }
+    }
+    .public {
+        background: url("/images/imageset.png") -125px -50px;
+    }
+    .hidden {
+        background: url("/images/imageset.png") -150px -50px;
+    }
+    .rec {
+        background: url("/images/imageset.png") -100px -50px;
+    }
+    .datetime {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+    }
+    blockquote {
+        clear: none;
+        margin: 0.643em auto;
+        text-align: justify;
+    }
+    &.own {
+        dl {
+            &.stats {
+                padding-left: 12.15em;
+            }
+        }
+    }
+}
+.blurb .header .heading, .blurb .header ul, .blurb .header p.status {
+    display: block;
+    background: transparent;
+    margin: 0.375em 5.25em 0 65px;
+}
+.blurb h4 a:link, .blurb h4 img {
+    color: #900;
+    vertical-align: bottom;
+}
+.blurb .header p.notice, .blurb ul.series {
+    margin: 0.875em 0 0 0;
+}
+.item {
+    .blurb {
+        .header {
+            display: none;
+        }
+    }
+}
+.blurb ul.required-tags li, .blurb ul.required-tags li a {
+    position: static;
+    display: inline;
+    padding-left: 0;
+    height: 25px;
+    width: 25px;
+    border: none;
+}
+.blurb .required-tags .category, .blurb .iswip, .blurb .external-work {
+    position: absolute;
+    left: 28px;
+}
+.blurb .iswip, .blurb .external-work {
+    top: 28px;
+}
+.blurb .rating, .blurb .required-tags .warnings {
+    margin: 0 0 3px;
+}
+.blurb .rating-notrated, .blurb .category-none, .blurb .warning-no, .blurb .count {
+    background: url("/images/imageset.png") -150px 0px;
+}
+.claim {
+    .datetime {
+        position: static;
+    }
+}
+.picture {
+    .header {
+        border-bottom: 1px solid #ccc;
+    }
+}
+.index {
+    .collection {
+        .icon {
+            background: url("/images/imageset.png") -55px -525px;
+        }
+    }
+    .skins {
+        .icon {
+            background: url("/images/imageset.png") 0px -580px;
+        }
+    }
+    .pseud {
+        .icon {
+            background: url("/images/imageset.png") 0px -525px;
+        }
+    }
+    .mystery {
+        .icon {
+            background: url("/images/imageset.png") -110px -525px;
+        }
+    }
+}
+.index .tag .icon, .index .tagset .icon {
+    background: url("/images/imageset.png") -55px -580px;
+}
+.picture .icon img, .index .picture .icon {
+    position: absolute;
+    top: 0;
+    height: 55px;
+    width: 55px;
+    background-repeat: no-repeat;
+}
+.prompt {
+    h6 {
+        float: left;
+        min-width: 65px;
+    }
+}
+.bookmark {
+    .status {
+        right: 0.5em;
+        position: absolute;
+        z-index: 50;
+        width: 60px;
+        &.icon {
+            left: -50px;
+            top: 0;
+        }
+        span {
+            border: 1px solid #eee;
+            display: block;
+            float: left;
+            height: 25px;
+            line-height: 1.875;
+            margin: 0 2.5px 0 0;
+            text-align: center;
+            width: 25px;
+        }
+    }
+    .user {
+        border: 1px solid #ccc;
+        clear: right;
+        overflow: hidden;
+    }
+}
